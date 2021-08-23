@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_17">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-webdesign" transform="translate(-772 -3225)">
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="63" cy="63" r="63" transform="translate(772 3225)" fill="#585858"/>
+      <g transform="matrix(1, 0, 0, 1, 772, 3225)" filter="url(#Ellipse_17)">
+        <circle id="Ellipse_17-3" data-name="Ellipse 17" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_17-4" data-name="Ellipse 17" transform="translate(772 3225)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_17" data-name="Group 17">
+      <path id="Icon_material-web-asset" data-name="Icon material-web-asset" d="M41.833,6H9.167A4.665,4.665,0,0,0,4.5,10.667v28a4.665,4.665,0,0,0,4.667,4.667H41.833A4.68,4.68,0,0,0,46.5,38.667v-28A4.665,4.665,0,0,0,41.833,6Zm0,32.667H9.167V15.333H41.833Z" transform="translate(809.5 3264.833)" fill="#e6e6e6"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="17" height="17" transform="translate(808 3268)" fill="#e6e6e6"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="19" height="19" rx="9.5" transform="translate(841 3280)" fill="#e6e6e6"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M9.5,0,19,16H0Z" transform="translate(815 3298)" fill="#e6e6e6"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_10">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-audition" transform="translate(-364 -2759)">
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="63" cy="63" r="63" transform="translate(364 2759)" fill="#585858"/>
+      <g transform="matrix(1, 0, 0, 1, 364, 2759)" filter="url(#Ellipse_10)">
+        <circle id="Ellipse_10-3" data-name="Ellipse 10" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_10-4" data-name="Ellipse 10" transform="translate(364 2759)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_simple-adobeaudition" data-name="Icon simple-adobeaudition" d="M0,.45V41.4H42V.45ZM1.75,2.2h38.5V39.65H1.75Zm9.9,21.875L10.3,29.085c-.03.142-.086.24-.254.24H7.541c-.17,0-.2-.056-.17-.254L12.217,12.2a5.409,5.409,0,0,0,.17-1.43c0-.114.056-.17.14-.17h3.579c.112,0,.17.028.2.17L21.74,29.1c.028.142,0,.226-.142.226H18.781a.257.257,0,0,1-.252-.21l-1.409-5.04Zm4.762-2.8c-.479-1.888-1.606-6-2.028-8h-.028c-.366,2-1.269,5.353-1.972,8ZM33.95,26.569c0,.2.028.787.084,1.747,0,.112-.011.168-.123.2a14.406,14.406,0,0,1-5.271,1.155c-2.564,0-5.015-.985-5.015-4.93V15.726c0-.142.056-.226.2-.226h2.755c.142,0,.2.084.2.226v8.645c0,1.662.726,2.564,2.473,2.564a4.767,4.767,0,0,0,1.727-.31v-10.9c0-.142.056-.226.2-.226h2.58c.17,0,.2.084.2.226V26.569Z" transform="translate(406 2801.075)" fill="#e6e6e6"/>
+  </g>
+</svg>
