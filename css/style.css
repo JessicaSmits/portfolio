@@ -53,7 +53,7 @@ header img.hero {
 
 /* global main */
 nav {
-    background: #585858;
+    background: #585858f1;
     padding-top: 15px;
     margin: 0 auto 180px;
     text-align: center;
@@ -61,6 +61,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 2;
+    border-radius: 30px;
 }
 
 nav ul {
@@ -125,9 +126,12 @@ footer {
     margin-top: 180px;
 }
 
-footer .icon {
-    width: 45px;
+footer a {
     margin-right: 170px;
+}
+
+footer img.icon {
+    width: 45px;
 }
 
 footer div.container {
@@ -135,7 +139,7 @@ footer div.container {
     margin: 0 auto;
 }
 
-footer div.container .icon:last-of-type {
+footer a:last-of-type {
     margin-right: 0;
 }
 
@@ -147,7 +151,7 @@ section.about {
 
 img.portrait{
     float: left;
-    aspect-ratio: 2/3;
+    aspect-ratio: 502/687;
     max-width: 502px;
     height: auto;
     width: 100%;
@@ -180,8 +184,13 @@ img.portrait{
     margin-bottom: 50px;
 }
 
-.general-info #last-container {
+#last-container {
     margin-right: 0;    
+}
+
+/* skills */
+section.skills {
+    margin: 0 auto;
 }
 
 section.skills h2 {
@@ -199,10 +208,13 @@ div.apps, div.skills{
 }
 
 section.skills p {
-    margin-left: 21px;
+    margin: 35px 33px 0 21px;
     width: 228px;
     float: left;
-    margin-top: 35px;
+}
+
+section.skills p.last {
+    margin-right: 0;
 }
 
 section.skills img{
@@ -223,14 +235,21 @@ section.skills div.skills p, div.code-languages p:first-of-type {
     width: 1264px;
 }
 
+#first-project {
+    margin-top: 80px;
+}
+
 .project {
     margin: 0 auto 140px;
 }
 
 .project div.container li {
-    list-style: inside;
     font: normal normal normal 20px/30px 'Kufam';
     color: #E6E6E6;
+}
+
+.project div.container li::before {
+    content: "- ";
 }
 
 .project .container h3 {
@@ -245,7 +264,6 @@ section.skills div.skills p, div.code-languages p:first-of-type {
     height: 100%;
     object-position: 0% 0%;
     border-radius: 30px;
-    
 }
 
 .project .left, div.list ul {
@@ -258,16 +276,13 @@ section.skills div.skills p, div.code-languages p:first-of-type {
 
 .project .container {
     max-width: 600px;
-    height: 450px;
-    display: inline-block;
-    vertical-align: bottom;
 }
 
 .project .container p {
     max-width: 550px;
 }
 
-div.list ul:last-child {
+div.list ul.last{
     margin-left: 88px;
 }
 
@@ -286,10 +301,13 @@ p.photo-text {
 }
 
 
-
 /* contact */
 .contact p {
     margin: 90px 0 80px;
+}
+
+.contact img {
+    width: 44px;
 }
 
 .contact img, .contact h3 {
@@ -297,18 +315,21 @@ p.photo-text {
 }
 
 .contact h3 {
-    margin-left: 55px;
-    margin-bottom: 64px;
+    margin: 0 0 64px 55px;
 }
 
 .contact a {
     text-decoration: none;
 }
 
+div.links img{
+    text-align: top;
+}
+
 
 /* media queries */
-@media all and (max-width: 1365px) {
-    /* about */
+@media all and (max-width: 1400px) {
+    /* globalk */
     header img.hero {
         height: 219px;
         object-position: 0 10%;
@@ -323,6 +344,7 @@ p.photo-text {
         width: 825px;
     }
 
+    /* about */
     img.portrait {
         margin-right: 50px;
         max-width: 430px;
@@ -333,21 +355,62 @@ p.photo-text {
     }
 
     .general-info .container {
-        margin-right: 100px;
+        margin-right: 65px;
     }
 
     .general-info .bottom {
-        margin-bottom: 40px;
+        margin-bottom: 42px;
+    }
+
+    section.skills p {
+        width: 195px;
+        margin: 22.5px 25px 0 15px;
+    }
+
+    section.skills div.skills p, div.code-languages p:first-of-type {
+        margin-top: 37.5px;
+    }
+
+    #javascript-text {
+        margin-top: 7.5px;
+    }
+
+    section.skills img {
+        width: 105px;
     }
 
     /* project */
+    .all-projects {
+        max-width: 1000px;
+    }
 
+    .project img {
+        max-width: 480px;
+    }
+
+    #first-project {
+        margin-top: 60px;
+    }
+
+    .project {
+        margin-bottom: 110px;
+    }
+
+    .project .container {
+        max-width: 500px;
+    }
+
+    div.list ul.last {
+        margin-left: 50px;
+    }
+
+    /* contact */
 
 }
 
 @media all and (max-width:1024px) {
     
-    /* about */
+    /* global */
     nav ul li {
         font-size: 20px;
         line-height: 26px;
@@ -365,6 +428,10 @@ p.photo-text {
         width: 443px;
     }
 
+    div.title {
+        max-height: 150px;
+    }
+
     h1 {
         font-size: 75px;
         line-height: 98px;
@@ -376,6 +443,136 @@ p.photo-text {
     }
 
     section.about {
-        margin-top: 0;
+        margin: 35px auto 50px;
     }
+
+    img.portrait {
+        max-width: 202px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* about */
+    img.portrait {
+        margin-right: 78px;
+        margin-bottom: 28px;
+    }
+
+    .general-info {
+        max-width: 312px;
+        padding-top: 7px;
+    }
+
+    #education {
+        padding-top: 0;
+    }
+
+    #languages {
+        margin-left: 40px;
+        margin-right: 85px;
+        padding-top: 0;
+    }
+
+    div.apps, div.skills {
+        margin-bottom: 20px;
+    }
+
+    section.skills h2 {
+        margin-bottom: 7px;
+    }
+
+    section.skills img {
+        width: 56px;
+        margin-bottom: 20px;
+    }
+
+    section.skills p {
+        margin: 8px 6.5px 0 9.5px;
+        width: 140px;
+    }
+
+    section.skills div.skills p, div.code-languages p:first-of-type {
+        margin-top: 18.5px;
+    }
+
+    #javascript-text {
+        margin-top: -2px;
+    }
+
+    footer {
+        margin-top: 90px;
+        padding: 11px 0;
+        height: 32px;
+    }
+
+    footer a {
+        margin-right: 116px;
+    }
+
+    footer img.icon {        
+        width: 32px;
+    }
+
+    /* projects */
+    .all-projects {
+        max-width: 615px;
+    }
+
+    #first-project {
+        margin-top: 14px;
+    }
+
+    p.photo-text {
+        font-size: 12px;
+    }
+
+    .project {
+        margin-bottom: 50px;
+    }
+
+    .project img {
+        max-width: 300px;
+    }
+
+    .project div.container li {
+        font: normal normal normal 14px/21px Kufam;
+    }
+
+    .project .container {
+        max-width: 294px;
+    }
+
+    .project .container h3 {
+        margin-top: 11px;
+    }
+
+    div.list ul.last {
+        margin-left: 0;
+    }
+
+    div.list ul:first-of-type {
+        width: 170px;
+    }
+
+    /* contact */
+
+
+
+}
+
+@media all and (max-width:719px) { 
+
 }
