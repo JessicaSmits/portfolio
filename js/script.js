@@ -4,7 +4,6 @@ var checkTablet = window.matchMedia("(min-width: 720px)")
 var mobileSize = window.matchMedia("(max-width: 719px)");
 $(document).ready(windowSize());
 $("div.burger-icon").click(burgerMenu);
-console.log(tabletSize);
 
 function windowSize() {
     if (tabletSize.matches && checkTablet.matches) {
@@ -32,6 +31,15 @@ function windowSize() {
 
     widthOfImg = $(".project img").width()
     $("p.photo-text").css({"max-width": widthOfImg})
+
+    heightOfContent = $("header").outerHeight(true) + $("main").outerHeight(true) + $("footer").outerHeight(true);
+    console.log(heightOfContent);
+
+    if ($(window).height() > heightOfContent) {
+        $("footer").addClass("fixed");
+    } else {
+        $("footer").removeClass("fixed");
+    }
 }
 
 function burgerMenu(){

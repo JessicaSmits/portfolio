@@ -150,7 +150,7 @@ div.bar-group {
 }
 
 ul.icons img {
-    width: 45px;
+    width: 40px;
 }
 
 ul.icons {
@@ -165,7 +165,7 @@ ul.icons {
 ul.icons li {
     line-height: 0;
     display: inline-block;
-    margin-right: 72px;
+    margin-right: 60px;
 }
 
 ul.icons li:last-of-type {
@@ -254,7 +254,7 @@ footer a {
 }
 
 footer img.icon {
-    width: 45px;
+    height: 45px;
 }
 
 footer div.container {
@@ -264,6 +264,11 @@ footer div.container {
 
 footer a:last-of-type {
     margin-right: 0;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
 }
 
 /* about me */
@@ -649,7 +654,7 @@ div.links {
     }
 
     footer img.icon {        
-        width: 32px;
+        height: 32px;
     }
 
     /* projects */
@@ -814,11 +819,6 @@ div.links {
     .contact .last img {
         margin-right: 0;
     }
-
-    footer.fixed {
-        position: fixed;
-        bottom: 0;
-    }
     
 }
 
@@ -857,6 +857,14 @@ div.links {
         height: 3px;
     }
 
+    #bar1.open {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #bar3.open {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
     #bar2 {
         margin: 4px 0;
     }
@@ -871,5 +879,17 @@ div.links {
 
     div.apps, div.know-how {
         margin-bottom: 20px;
+    }
+
+    footer img.icon{
+        height: 25px;
+    }
+
+    footer a {
+        margin-right: 60px;
+    }
+
+    footer {
+        height: 25px;
     }
 }
