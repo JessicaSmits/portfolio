@@ -8,6 +8,16 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
+    min-height: 100vh;
+    color: white;
+}
+
+* {
+    transition: 300ms ease-in-out;
+} 
+
+body.open {
+    overflow: hidden;
 }
 
 img {
@@ -50,9 +60,121 @@ header img.hero {
     margin-bottom: 80px;
 }
 
+nav.burger-menu {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+
+div.burger-icon {
+    position: fixed;
+    right: 0;
+    display: none;
+    aspect-ratio: 1/1;
+    width: 60px;
+    background-color: #585858;
+    border-radius: 0 0 0 36px;
+    box-shadow: 0px 0px 30px #00000099;
+    cursor: pointer;
+    z-index: 3;
+    transition: 300ms ease-in-out;
+}
+
+div.burger-icon.open {
+    background: #2ee6c6;
+    transition: 300ms ease-in-out;
+}
+
+div.bar.open {
+    background: #585858;
+    transition: 300ms ease-in-out;
+}
+
+div.bar-group {
+    padding-top: 16.4px;
+    padding-left: 16px;
+}
+
+#bar1.open {
+    transform: rotate(45deg) translate(7px, 5px);
+    transition: 300ms ease-in-out;
+}
+
+#bar3.open {
+    transform: rotate(-45deg) translate(7px, -5px);
+    transition: 300ms ease-in-out;
+}
+
+#bar2 {
+    margin: 5px 0;
+}
+
+#bar2.open {
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.bar {
+    width: 34px;
+    height: 3.5px;
+    background-color: #2EE6C6;
+    transition: 300ms ease-in-out;
+}
+
+.overlay {
+    display: none;
+    background-color: #e6e6e6;
+    color: #585858;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+    transition: unset;
+}
+
+.overlay ul {
+    margin-top: calc(50vh - 175px);
+}
+
+.overlay li {
+    display: list-item;
+    list-style: none;
+}
+
+.overlay li.middle-nav {
+    margin: 20px 0;
+}
+
+ul.icons img {
+    width: 45px;
+}
+
+ul.icons {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto 20px;
+}
+
+ul.icons li {
+    line-height: 0;
+    display: inline-block;
+    margin-right: 72px;
+}
+
+ul.icons li:last-of-type {
+    margin-right: 0;
+}
+
 
 /* global main */
-nav {
+nav.standard {
     background: #585858f1;
     padding-top: 15px;
     margin: 0 auto 180px;
@@ -64,7 +186,7 @@ nav {
     border-radius: 30px;
 }
 
-nav ul {
+nav.standard ul {
     max-width: fit-content;
     margin: 0 auto;
 }
@@ -76,14 +198,13 @@ nav ul li {
     line-height: 39px;
 }
 
-li.middle-nav {
+.standard li.middle-nav {
     margin: 0 345px;
 }
 
-.highlight{
+li.highlight{
     color: #2EE6C6;
 }
-
 
 div.title {
     position: relative;
@@ -119,11 +240,18 @@ p {
 
 /* global footer */
 footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
     height: 50px;
     padding: 25px 0;
     background-color: #E6E6E6;
     margin-top: 180px;
+}
+
+footer.fixed {
+    position: fixed;
+    bottom: 0;
 }
 
 footer a {
@@ -180,49 +308,49 @@ img.portrait{
     margin-right: 150px;
 }
 
-.general-info .bottom {
-    margin-bottom: 50px;
-}
-
 #last-container {
     margin-right: 0;    
 }
 
 /* skills */
-section.skills {
+.skills {
     margin: 0 auto;
 }
 
-section.skills h2 {
+.skills h2 {
     margin-bottom: 15px;
 }
 
-section.skills div.code-languages {
+.skills div.code-languages {
     width: fit-content;
     margin: 0 auto;
 }
 
-div.apps, div.skills{
+.skills div.container {
+    float: left;
+}
+
+div.apps, div.know-how{
     width: fit-content;
     margin: 0 auto 60px;
 }
 
-section.skills p {
+.skills p {
     margin: 35px 33px 0 21px;
     width: 228px;
     float: left;
 }
 
-section.skills p.last {
+.skills p.last {
     margin-right: 0;
 }
 
-section.skills img{
+.skills img{
     float: left;
     margin-bottom: 40px;
 }
 
-section.skills div.skills p, div.code-languages p:first-of-type {
+div.know-how p, div.code-languages p:first-of-type {
     margin-top: 50px;
 }
 
@@ -294,7 +422,7 @@ div.list ul.last{
     text-align: center;
 }
 
-p.photo-text {
+.project p.photo-text {
     font-style: italic;
     font-size: 16px;
     text-align: right;
@@ -307,7 +435,8 @@ p.photo-text {
 }
 
 .contact img {
-    width: 44px;
+    height: 46px;
+    margin-right: 55px;
 }
 
 .contact img, .contact h3 {
@@ -315,15 +444,15 @@ p.photo-text {
 }
 
 .contact h3 {
-    margin: 0 0 64px 55px;
+    margin-top: 5px;
 }
 
 .contact a {
     text-decoration: none;
 }
 
-div.links img{
-    text-align: top;
+div.links {
+    margin-bottom: 64px;
 }
 
 
@@ -336,7 +465,7 @@ div.links img{
         margin-bottom: 40px;
     }
     
-    li.middle-nav{
+    .standard li.middle-nav{
         margin: 0 200px;
     }
 
@@ -362,12 +491,12 @@ div.links img{
         margin-bottom: 42px;
     }
 
-    section.skills p {
+    .skills p {
         width: 195px;
         margin: 22.5px 25px 0 15px;
     }
 
-    section.skills div.skills p, div.code-languages p:first-of-type {
+    div.know-how p, div.code-languages p:first-of-type {
         margin-top: 37.5px;
     }
 
@@ -375,7 +504,7 @@ div.links img{
         margin-top: 7.5px;
     }
 
-    section.skills img {
+    .skills img {
         width: 105px;
     }
 
@@ -405,7 +534,9 @@ div.links img{
     }
 
     /* contact */
-
+    div.links {
+        margin-bottom: 40px;
+    }
 }
 
 @media all and (max-width:1024px) {
@@ -416,11 +547,11 @@ div.links img{
         line-height: 26px;
     }
 
-    nav {
+    nav.standard {
         margin-bottom: 50px;
     }
 
-    li.middle-nav{
+    .standard li.middle-nav{
         margin: 0 100px;
     }
 
@@ -443,7 +574,7 @@ div.links img{
     }
 
     section.about {
-        margin: 35px auto 50px;
+        margin: 35px auto 55px;
     }
 
     img.portrait {
@@ -490,21 +621,21 @@ div.links img{
         margin-bottom: 20px;
     }
 
-    section.skills h2 {
+    .skills h2 {
         margin-bottom: 7px;
     }
 
-    section.skills img {
+    .skills img {
         width: 56px;
         margin-bottom: 20px;
     }
 
-    section.skills p {
-        margin: 8px 6.5px 0 9.5px;
+    .skills p {
+        margin: 8px 6.5px 0 10px;
         width: 140px;
     }
 
-    section.skills div.skills p, div.code-languages p:first-of-type {
+    div.know-how p, div.code-languages p:first-of-type {
         margin-top: 18.5px;
     }
 
@@ -535,7 +666,7 @@ div.links img{
         margin-top: 14px;
     }
 
-    p.photo-text {
+    .project p.photo-text {
         font-size: 12px;
     }
 
@@ -568,11 +699,177 @@ div.links img{
     }
 
     /* contact */
+    .contact p {
+        margin: 0 0 45px 0;
+    }
 
+    .contact img {
+        height: 30px;
+    }
 
+    div.links {
+        margin-bottom: 28px;
+    }
 
 }
 
 @media all and (max-width:719px) { 
+    h1, h2, h3, p {
+        text-align: center;
+    }
 
+    nav ul li {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    header img.hero {
+        margin-bottom: 40px;
+    }
+
+    img.portrait {
+        float: none;
+        display: block;
+        margin: 0 auto 50px;
+    }
+
+    section.about {
+        margin-top: 30px;
+    }
+
+    .general-info {
+        float: none;
+        max-width: 280px;
+    }
+
+    .general-info div.container:first-of-type {
+        margin-left: 27px;
+    }
+
+    .general-info .container {
+        margin-right: 0;
+    }
+    
+    .general-info .bottom {
+        margin-bottom: 30px;
+    }
+
+    #age {
+        margin: 0 31px 0 37.5px;
+    }
+
+    #languages {
+        margin: 0;
+    }
+
+    div.apps {
+        margin-top: 20px;
+    }
+
+    .skills div.container {
+        float: none;
+    }
+
+    .skills p {
+        text-align: left;
+    }
+
+    div.apps, div.know-how {
+        margin-bottom: 40px;
+    }
+
+    /* projects */
+    .all-projects {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .project .left, .project .right {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .project h2, .project h3, .project p {
+        text-align: left;
+    }
+
+    .project img, p.photo-text {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .project .container h2 {
+        margin-top: 30px;
+    }
+
+    /* contact */
+    div.links {
+        float: left;
+    }
+
+    .contact {
+        max-width: 400px;
+    }
+
+    .container {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .contact .last img {
+        margin-right: 0;
+    }
+    
+}
+
+@media all and (max-width: 375px) {
+
+    nav ul li {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .overlay ul {
+        margin-top: calc(50vh - 118px);
+    }
+
+    ul.icons img {
+        width: 29px;
+    }
+
+    ul.icons li {
+        margin-right: 48px;
+    }
+    
+    div.burger-icon {
+        width: 50px;
+        border-radius: 0 0 0 30px;
+        box-shadow: 0px 0px 30px #00000099;
+    }
+
+    div.bar-group {
+        padding-top: 13.7px;
+        padding-left: 13.4px;
+    }
+
+    div.bar {
+        width: 28px;
+        height: 3px;
+    }
+
+    #bar2 {
+        margin: 4px 0;
+    }
+
+    .skills img {
+        margin-bottom: 12px;
+    }
+
+    .skills h2 {
+        margin-bottom: 0;
+    }
+
+    div.apps, div.know-how {
+        margin-bottom: 20px;
+    }
 }
