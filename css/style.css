@@ -178,6 +178,7 @@ nav.standard {
     background: #585858f1;
     padding-top: 15px;
     margin: 0 auto 180px;
+    max-width: 1000px;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
@@ -247,11 +248,6 @@ footer {
     padding: 25px 0;
     background-color: #E6E6E6;
     margin-top: 180px;
-}
-
-footer.fixed {
-    position: fixed;
-    bottom: 0;
 }
 
 footer a {
@@ -818,6 +814,11 @@ div.links {
 
     .contact .last img {
         margin-right: 0;
+    }
+
+    footer.fixed {
+        position: fixed;
+        bottom: 0;
     }
     
 }
