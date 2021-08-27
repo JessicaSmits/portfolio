@@ -465,7 +465,7 @@ div.links {
 }
 
 /* media queries */
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1500px) {
     /* globalk */
     header img.hero {
         height: 219px;
@@ -547,7 +547,7 @@ div.links {
     }
 }
 
-@media all and (max-width:1024px) {
+@media all and (max-width:1300px) {
     
     /* global */
     nav ul li {
@@ -733,6 +733,7 @@ div.links {
 
     header img.hero {
         margin-bottom: 40px;
+        height: 196px;
     }
 
     img.portrait {
@@ -820,13 +821,18 @@ div.links {
         max-width: 400px;
     }
 
-    .container {
+    .contact .container {
         width: max-content;
         margin: 0 auto;
     }
 
     .contact .last img {
         margin-right: 0;
+    }
+
+    .contact p {
+        max-width: 275px;
+        margin: 0 auto 45px;
     }
     
 }
@@ -837,6 +843,12 @@ div.links {
         font-size: 20px;
         line-height: 26px;
     }
+
+    h1 {
+        font-size: 60px;
+        line-height: 90px;
+    }
+
 
     .overlay ul {
         margin-top: calc(50vh - 118px);
@@ -890,6 +902,10 @@ div.links {
         margin-bottom: 20px;
     }
 
+    .contact img {
+        margin-right: 40px;
+    }
+
     footer img.icon{
         height: 25px;
     }
@@ -901,4 +917,5 @@ div.links {
     footer {
         height: 25px;
     }
+
 }
