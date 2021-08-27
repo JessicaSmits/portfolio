@@ -21,19 +21,20 @@ function windowSize() {
     if (mobileSize.matches) {
         $("nav.standard").hide();
         $("nav.burger-menu, div.burger-icon").show();
-        $("section.contact div.links h3").hide()
+        $("section.contact div.links h3").hide();
+        $(".contact div.temporary").addClass("clear");
 
     } else {
         $("nav.standard").show();
         $("nav.burger-menu, div.burger-icon").hide();
         $("section.contact div.links h3").show()
+        $(".contact div.temporary").removeClass("clear");
     }
 
     widthOfImg = $(".project img").width()
     $("p.photo-text").css({"max-width": widthOfImg})
 
     heightOfContent = $("header").outerHeight(true) + $("main").outerHeight(true) + $("footer").outerHeight(true);
-    console.log(heightOfContent);
 
     if ($(window).height() > heightOfContent) {
         $("footer").addClass("fixed");

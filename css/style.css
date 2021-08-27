@@ -430,6 +430,11 @@ div.list ul.last{
 
 
 /* contact */
+.contact {
+    margin: 0 auto;
+    width: max-content;
+}
+
 .contact p {
     margin: 90px 0 80px;
 }
@@ -439,7 +444,7 @@ div.list ul.last{
     margin-right: 55px;
 }
 
-.contact img, .contact h3 {
+.contact .links a:first-child, .contact h3{
     float: left;
 }
 
@@ -455,6 +460,9 @@ div.links {
     margin-bottom: 64px;
 }
 
+.contact .container .links {
+    width: max-content;
+}
 
 /* media queries */
 @media all and (max-width: 1400px) {
@@ -805,6 +813,7 @@ div.links {
     /* contact */
     div.links {
         float: left;
+        margin-bottom: 0;
     }
 
     .contact {
