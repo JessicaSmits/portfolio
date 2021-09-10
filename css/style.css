@@ -55,7 +55,7 @@ header {
 
 header img.hero {
     width: 100%;
-    height: 495px;
+    height: 350px;
     object-position: 0 0;
     margin-bottom: 80px;
 }
@@ -468,7 +468,7 @@ div.links {
 @media all and (max-width: 1500px) {
     /* globalk */
     header img.hero {
-        height: 219px;
+        height: 200px;
         object-position: 0 10%;
         margin-bottom: 40px;
     }
@@ -733,7 +733,7 @@ div.links {
 
     header img.hero {
         margin-bottom: 40px;
-        height: 196px;
+        height: 175px;
     }
 
     img.portrait {
