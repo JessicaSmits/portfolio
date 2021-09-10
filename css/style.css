@@ -57,7 +57,7 @@ header img.hero {
     width: 100%;
     height: 350px;
     object-position: 0 0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 nav.burger-menu {
@@ -177,7 +177,7 @@ ul.icons li:last-of-type {
 nav.standard {
     background: #585858f1;
     padding-top: 15px;
-    margin: 0 auto 180px;
+    margin: 0 auto 100px;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
@@ -732,7 +732,7 @@ div.links {
     }
 
     header img.hero {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         height: 175px;
     }
 
