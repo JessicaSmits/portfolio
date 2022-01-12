@@ -31,8 +31,8 @@ function windowSize() {
         $(".contact div.temporary").removeClass("clear");
     }
 
-    widthOfImg = $(".project img").width()
-    $("p.photo-text").css({"max-width": widthOfImg})
+    widthOfImg = $(".project img").width();
+    $("p.photo-text").css({"max-width": widthOfImg});
 
     heightOfContent = $("header").outerHeight(true) + $("main").outerHeight(true) + $("footer").outerHeight(true);
 
