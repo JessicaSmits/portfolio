@@ -379,7 +379,7 @@ div.know-how p, div.code-languages p:first-of-type {
 }
 
 .project .container h3 {
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .project img {
@@ -417,7 +417,11 @@ div.list ul.last{
 }
 
 #ued-pic {
-    object-position: 0% 20%;
+    object-position: 0% 50%;
+}
+
+#mms-pic {
+    object-position: 37% 0%;
 }
 
 .all-projects p.middle {
@@ -468,11 +472,12 @@ div.links {
 
 /* media queries */
 @media all and (max-width: 1700px) {
-    /* globalk */
+    /* global */
     header img.hero {
         height: 200px;
         object-position: 0 10%;
         margin-bottom: 40px;
+        max-width: max-content;
     }
     
     .standard li.middle-nav{
