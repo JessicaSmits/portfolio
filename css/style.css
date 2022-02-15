@@ -3,6 +3,7 @@ html {
     background: #585858;
     font-family: 'Kufam', sans-serif;
     color: white;
+    z-index: 1;
 }
 
 body {
@@ -40,6 +41,7 @@ main {
     position: relative;
     max-width: max-content;
     margin: 0 auto;
+    padding-bottom: 180px;
 }
 
 div.clear {
@@ -52,10 +54,22 @@ header {
 }
 
 header img.hero {
+    display: block;
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-position: 0 0;
     margin-bottom: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+div.overlay-hero {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(88,88,88,0) 0%, rgba(88,88,88,0.2) 12%, rgba(88,88,88,1) 57%, rgba(88,88,88,1) 100%);
 }
 
 nav.burger-menu {
@@ -174,7 +188,7 @@ ul.icons li:last-of-type {
 /* global main */
 nav.standard {
     background: #585858;
-    padding-top: 15px;
+    padding-top: 30px;
     margin: 0 auto 100px;
     text-align: center;
     position: -webkit-sticky;
@@ -204,23 +218,12 @@ li.highlight{
     color: #2EE6C6;
 }
 
-div.title {
-    position: relative;
-    max-height: 348px;
-}
-
 h1 {
     font: normal normal 900 170px/215px 'Kufam';
     text-shadow: 0px 15px 6px #2EE6C6;
     text-transform: capitalize;
     text-align: center;
-}
-
-h1.mirror {
-    opacity: 0.1;
-    transform: scaleY(-1);
-    position: relative;
-    top: -94px;
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -236,6 +239,18 @@ p {
     color: #E6E6E6;
 }
 
+button {
+    display: block;
+    border-radius: 15px;
+    width: 125px;
+    height: auto;
+    margin: 20px auto 0;
+    font: normal normal normal 20px/30px 'Kufam';
+    color: #2ee6c6;
+    background-color: #585858;
+
+}
+
 /* global footer */
 footer {
     position: relative;
@@ -244,7 +259,7 @@ footer {
     height: 50px;
     padding: 25px 0;
     background-color: #E6E6E6;
-    margin-top: 180px;
+
 }
 
 footer a {
@@ -269,9 +284,13 @@ footer.fixed {
     bottom: 0;
 }
 
+.hide {
+    display: none;
+}
+
 /* about me */
 section.about {
-    margin: 80px auto 200px;
+    margin: 0 auto 120px;
     max-width: max-content;
 }
 
@@ -311,6 +330,10 @@ img.portrait{
 }
 
 /* skills */
+.skills h1 {
+    margin-bottom: 0;
+}
+
 .skills {
     margin: 0 auto;
 }
@@ -357,12 +380,22 @@ div.know-how p, div.code-languages p:first-of-type {
 }
 
 /* projects */
-.all-projects {
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 550px;
+}
+
+#all-projects {
     width: 1264px;
 }
 
-#first-project {
-    margin-top: 80px;
+.project p {
+    max-width: 550px;
 }
 
 .project {
@@ -404,10 +437,6 @@ div.know-how p, div.code-languages p:first-of-type {
     max-width: 600px;
 }
 
-.project .container p {
-    max-width: 550px;
-}
-
 div.list ul.last{
     margin-left: 88px;
 }
@@ -424,7 +453,7 @@ div.list ul.last{
     object-position: 37% 0%;
 }
 
-.all-projects p.middle {
+main p#more {
     text-align: center;
 }
 
@@ -442,7 +471,7 @@ div.list ul.last{
 }
 
 .contact p {
-    margin: 90px 0 80px;
+    margin: 80px 0;
 }
 
 .contact img {
@@ -463,7 +492,7 @@ div.list ul.last{
 }
 
 div.links {
-    margin-bottom: 64px;
+    margin-bottom: 42px;
 }
 
 .contact .container .links {
@@ -474,10 +503,8 @@ div.links {
 @media all and (max-width: 1700px) {
     /* global */
     header img.hero {
-        height: 200px;
         object-position: 0 10%;
         margin-bottom: 40px;
-        max-width: max-content;
     }
     
     .standard li.middle-nav{
@@ -524,16 +551,12 @@ div.links {
     }
 
     /* project */
-    .all-projects {
+    #all-projects {
         max-width: 1000px;
     }
 
     .project img {
         max-width: 480px;
-    }
-
-    #first-project {
-        margin-top: 60px;
     }
 
     .project {
@@ -557,6 +580,14 @@ div.links {
 @media all and (max-width:1300px) {
     
     /* global */
+    div.overlay-hero {
+        height: 500px;
+    }
+
+    main {
+        padding-bottom: 90px;
+    }
+
     nav ul li {
         font-size: 20px;
         line-height: 26px;
@@ -574,22 +605,15 @@ div.links {
         width: 443px;
     }
 
-    div.title {
-        max-height: 150px;
-    }
-
     h1 {
         font-size: 75px;
         line-height: 98px;
         text-shadow: 0px 6px 2px #2EE6C6;
-    }
-
-    h1.mirror {
-        top: -44px;
+        margin: 40px 0;
     }
 
     section.about {
-        margin: 35px auto 55px;
+        margin: 35px auto 100px;
     }
 
     img.portrait {
@@ -659,7 +683,6 @@ div.links {
     }
 
     footer {
-        margin-top: 90px;
         padding: 11px 0;
         height: 32px;
     }
@@ -673,12 +696,8 @@ div.links {
     }
 
     /* projects */
-    .all-projects {
+    #all-projects {
         max-width: 615px;
-    }
-
-    #first-project {
-        margin-top: 14px;
     }
 
     .project p.photo-text {
@@ -686,7 +705,7 @@ div.links {
     }
 
     .project {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .project img {
@@ -702,7 +721,7 @@ div.links {
     }
 
     .project .container h3 {
-        margin-top: 11px;
+        margin-top: 16px;
     }
 
     div.list ul.last {
@@ -716,7 +735,7 @@ div.links {
 
     /* contact */
     .contact p {
-        margin: 0 0 45px 0;
+        margin: 45px 0;
     }
 
     .contact img {
@@ -734,6 +753,10 @@ div.links {
         text-align: center;
     }
 
+    h1 {
+        margin-top: 60px;
+    }
+
     nav ul li {
         font-size: 30px;
         line-height: 45px;
@@ -741,7 +764,6 @@ div.links {
 
     header img.hero {
         margin-bottom: 30px;
-        height: 175px;
     }
 
     img.portrait {
@@ -796,7 +818,7 @@ div.links {
     }
 
     /* projects */
-    .all-projects {
+    #all-projects {
         width: max-content;
         margin: 0 auto;
     }
@@ -816,7 +838,7 @@ div.links {
     }
 
     .project .container h2 {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     /* contact */
@@ -840,7 +862,6 @@ div.links {
 
     .contact p {
         max-width: 275px;
-        margin: 0 auto 45px;
     }
     
 }

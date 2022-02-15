@@ -30,7 +30,9 @@
 </head>
 <body>
     <header>
-        <img src="assets/header-projects.jpg" alt="tree with blossom" class="hero">     
+        <div class="overlay-hero">
+            <img src="assets/header-projects.jpg" alt="tree with blossom" class="hero">
+        </div>     
 
         <nav class="burger-menu">
             <div class="burger-icon">
@@ -70,12 +72,14 @@
     </nav>
 
     <main>
-        <div class="title">
+        <div class="intro">
             <h1>projects</h1>
-            <h1 class="mirror">projects</h1>
+            <p>Welcome to my projects. The projects you see on this page are all schoolprojects, these are currently sorted from the most recent to the very first schoolproject I ever did. By clicking the sort button below you can swap the order the other way around.</p>
+            <button id="sortBtn">sort</button>
         </div>
-        <section class="all-projects">
-            <div class="project" id="first-project">
+
+        <section id="all-projects">
+            <div class="project">
                 <div class="left">
                     <img class="left"  src="assets/pic-TI.jpg" alt="picture of 1st website">
                     <p class="photo-text">Website by me</p>
@@ -108,7 +112,7 @@
                 
                 <div class="container left">
                     <h2>1.2 Sedentary behaviour</h2>
-                    <p>The second period we focussed on an app design, which should make people more aware of their sitting behaviour. My app is called: <a href="assets/documents/2.1-pitch-gamerup.pdf" target="_blank">GamerUp</a>. Apart from the design, we learned how to program a <a href="https://github.com/JessicaSmits/marsdatavisualisation" target="_blank">data visualisation</a> using p5.js.</p>
+                    <p>The second period we focussed on an app design, which should make people more aware of their sitting behaviour. My app is called: <a href="assets/documents/1.2-pitch-gamerup.pdf" target="_blank">GamerUp</a>. Apart from the design, we learned how to program a <a href="https://github.com/JessicaSmits/marsdatavisualisation" target="_blank">data visualisation</a> using p5.js.</p>
                     <h3>Learned</h3>
                     <div class="list">
                         <ul>
@@ -229,9 +233,8 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <p class="middle">Want more? Check the links down below</p>
-
         </section>
+        <p id="more">Want more? Check the links down below</p>
     </main>
 
     <footer>
