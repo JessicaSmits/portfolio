@@ -48,6 +48,8 @@ div.clear {
     clear: both;
 }
 
+
+
 /* global header */ 
 header {
     height: 100%;
@@ -631,6 +633,13 @@ div.links {
     }
 
     p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    button {
+        width: 80px;
+        border-radius: 15px;
         font-size: 14px;
         line-height: 21px;
     }
