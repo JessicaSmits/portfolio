@@ -13,7 +13,7 @@ body {
 }
 
 * {
-    transition: 300ms ease-in-out;
+    transition: all 300ms ease-in-out, color 1ms;
 } 
 
 body.open {
@@ -48,11 +48,9 @@ div.clear {
     clear: both;
 }
 
-
-
 /* global header */ 
 header {
-    height: 100%;
+    margin-bottom: 100px;
 }
 
 header img.hero {
@@ -71,14 +69,13 @@ div.overlay-hero {
     position: absolute;
     top: 0;
     display: inline-block;
-    background: linear-gradient(to bottom, rgba(88,88,88,0) 0%, rgba(88,88,88,0.2) 12%, rgba(88,88,88,1) 57%, rgba(88,88,88,1) 100%);
+    background: linear-gradient(to bottom, rgba(88,88,88,0) 0%, rgba(88,88,88,0.2) 17%, rgba(88,88,88,1) 72%, rgba(88,88,88,1) 100%);
 }
 
 nav.burger-menu {
     position: fixed;
     top: 0;
     z-index: 2;
-    display: none;
 }
 
 div.burger-icon {
@@ -173,7 +170,7 @@ ul.icons {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0 auto 20px;
+    margin: 0 auto 50px;
 }
 
 ul.icons li {
@@ -191,10 +188,9 @@ ul.icons li:last-of-type {
 nav.standard {
     background: #585858;
     padding-top: 30px;
-    margin: 0 auto 100px;
     text-align: center;
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-fixed;
+    position: fixed;
     top: 0;
     z-index: 2;
     width: 100%;
@@ -216,7 +212,7 @@ nav ul li {
     margin: 0 345px;
 }
 
-li.highlight{
+.highlight{
     color: #2EE6C6;
 }
 
@@ -226,6 +222,7 @@ h1 {
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 100px;
+    line-height: 1.2;
 }
 
 h2 {
@@ -239,6 +236,7 @@ h3 {
 p {
     font: normal normal normal 20px/30px 'Kufam';
     color: #E6E6E6;
+    margin-bottom: 20px;
 }
 
 button {
@@ -286,45 +284,45 @@ footer.fixed {
     bottom: 0;
 }
 
-.hide {
-    display: none;
-}
-
 /* about me */
 section.about {
     margin: 0 auto 120px;
     max-width: max-content;
 }
 
-img.portrait{
+div.overview, div.general-info {
     float: left;
+    max-width: 610px;
+}
+
+img.portrait{
     aspect-ratio: 502/687;
     max-width: 502px;
     height: auto;
     width: 100%;
     height: 100%;
-    margin-right: 114px;
+    margin: 0 0 30px;
     box-shadow: 10px 10px 15px #2EE6C6CC;
     border-radius: 30px;
     object-position: 62% 0%;
+    display: block;
 }
 
-.general-info {
-    float: left;
-    max-width: 610px;
-}
-
-.general-info .bottom {
+.project.bottom, .bottom {
     margin-bottom: 50px;
 }
 
-.general-info .container p {
+.overview h3, div.links h3 {
+    font-size: 24px;
+}
+
+.overview p {
     margin-bottom: 0;
 }
 
-.general-info .container {
+.overview div.container {
     float: left;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 #last-container {
@@ -351,6 +349,7 @@ img.portrait{
 
 .skills div.container {
     float: left;
+    margin-bottom: 20px;
 }
 
 div.apps, div.know-how{
@@ -359,7 +358,7 @@ div.apps, div.know-how{
 }
 
 .skills p {
-    margin: 35px 33px 0 21px;
+    margin: 20px 33px 0 21px;
     width: 228px;
     float: left;
 }
@@ -370,16 +369,9 @@ div.apps, div.know-how{
 
 .skills img{
     float: left;
-    margin-bottom: 40px;
+    width: 100px;
 }
 
-div.know-how p, div.code-languages p:first-of-type {
-    margin-top: 50px;
-}
-
-#javascript-text {
-    margin-top: 15px;
-}
 
 /* projects */
 .intro {
@@ -389,7 +381,7 @@ div.know-how p, div.code-languages p:first-of-type {
 .intro p {
     margin: 0 auto;
     text-align: center;
-    max-width: 550px;
+    max-width: 750px;
 }
 
 #all-projects {
@@ -463,6 +455,7 @@ main p#more {
     font-style: italic;
     font-size: 16px;
     text-align: right;
+    margin-bottom: 0;
 }
 
 
@@ -494,8 +487,9 @@ main p#more {
 }
 
 div.links {
-    margin-bottom: 42px;
+    margin-bottom: 35px;
 }
+
 
 .contact .container .links {
     width: max-content;
@@ -517,9 +511,12 @@ div.links {
         width: 825px;
     }
 
+    h1 {
+        font-size: 130px;
+    }
+
     /* about */
     img.portrait {
-        margin-right: 50px;
         max-width: 430px;
     } 
 
@@ -527,29 +524,21 @@ div.links {
         max-width: 500px;
     }
 
-    .general-info .container {
-        margin-right: 65px;
+    .overview div.container {
+        margin-right: 100px;
     }
 
-    .general-info .bottom {
+    .bottom, .project.bottom {
         margin-bottom: 42px;
     }
 
     .skills p {
         width: 195px;
-        margin: 22.5px 25px 0 15px;
-    }
-
-    div.know-how p, div.code-languages p:first-of-type {
-        margin-top: 37.5px;
-    }
-
-    #javascript-text {
-        margin-top: 7.5px;
+        margin: 0 25px 0 15px;
     }
 
     .skills img {
-        width: 105px;
+        width: 80px;
     }
 
     /* project */
@@ -575,19 +564,22 @@ div.links {
 
     /* contact */
     div.links {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }
 
 @media all and (max-width:1300px) {
-    
     /* global */
+    header {
+        margin-bottom: 40px;
+    }
+
     div.overlay-hero {
         height: 500px;
     }
 
     main {
-        padding-bottom: 90px;
+        padding-bottom: 65px;
     }
 
     nav ul li {
@@ -596,7 +588,7 @@ div.links {
     }
 
     nav.standard {
-        margin-bottom: 50px;
+        padding-top: 15px;
     }
 
     .standard li.middle-nav{
@@ -611,15 +603,19 @@ div.links {
         font-size: 75px;
         line-height: 98px;
         text-shadow: 0px 6px 2px #2EE6C6;
-        margin: 40px 0;
+        margin: 50px 0;
     }
 
     section.about {
-        margin: 35px auto 100px;
+        margin: 35px auto 0;
     }
 
     img.portrait {
         max-width: 202px;
+    }
+
+    .overview div.container {
+        margin-right: 50px;
     }
 
     h2 {
@@ -630,6 +626,11 @@ div.links {
     h3 {
         font-size: 16px;
         line-height: 21px;
+    }
+
+    .overview h3, div.links h3 {
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     p {
@@ -650,22 +651,19 @@ div.links {
         margin-bottom: 28px;
     }
 
-    .general-info {
+    div.overview, div.general-info {
         max-width: 312px;
-        padding-top: 7px;
     }
 
-    #education {
-        padding-top: 0;
+    div.overview {
+        margin-right: 10px;
     }
 
-    #languages {
-        margin-left: 40px;
-        margin-right: 85px;
-        padding-top: 0;
+    div.general-info  {
+        margin-left: 10px;
     }
 
-    div.apps, div.skills {
+    div.apps, div.skills, div.know-how {
         margin-bottom: 20px;
     }
 
@@ -674,21 +672,12 @@ div.links {
     }
 
     .skills img {
-        width: 56px;
-        margin-bottom: 20px;
+        width: 40px;
     }
 
     .skills p {
-        margin: 8px 6.5px 0 10px;
+        margin: 0 6.5px 0 10px;
         width: 140px;
-    }
-
-    div.know-how p, div.code-languages p:first-of-type {
-        margin-top: 18.5px;
-    }
-
-    #javascript-text {
-        margin-top: -2px;
     }
 
     footer {
@@ -705,6 +694,10 @@ div.links {
     }
 
     /* projects */
+    .intro p {
+        max-width: 550px;
+    }
+
     #all-projects {
         max-width: 615px;
     }
@@ -785,29 +778,20 @@ div.links {
         margin-top: 30px;
     }
 
-    .general-info {
+    div.overview, div.general-info {
         float: none;
         max-width: 280px;
     }
-
-    .general-info div.container:first-of-type {
-        margin-left: 27px;
+    .overview div.container {
+        margin-right: 10px;
     }
 
-    .general-info .container {
-        margin-right: 0;
+    .container {
+        margin: 0 0 0 31px;
     }
     
-    .general-info .bottom {
-        margin-bottom: 30px;
-    }
-
-    #age {
-        margin: 0 31px 0 37.5px;
-    }
-
-    #languages {
-        margin: 0;
+    .project.bottom, .bottom {
+        margin-bottom: 40px;
     }
 
     div.apps {
@@ -816,6 +800,7 @@ div.links {
 
     .skills div.container {
         float: none;
+        margin-bottom: 15px;
     }
 
     .skills p {
@@ -827,6 +812,10 @@ div.links {
     }
 
     /* projects */
+    .intro p {
+        max-width: 75vw;
+    }
+
     #all-projects {
         width: max-content;
         margin: 0 auto;
@@ -928,8 +917,8 @@ div.links {
         margin: 4px 0;
     }
 
-    .skills img {
-        margin-bottom: 12px;
+    .skills div.container {
+        margin-bottom: 10px;
     }
 
     .skills h2 {
