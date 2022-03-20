@@ -431,6 +431,16 @@ div.apps, div.know-how{
     max-width: 600px;
 }
 
+div.tag {
+    display: inline-block;
+    background-color: #2ee6c6;
+    color: #585858;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
 div.list ul.last{
     margin-left: 88px;
 }
