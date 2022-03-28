@@ -86,7 +86,7 @@ function sortDivs() {
 window.onresize = windowSize;
 
 // this code is so the text also changes when the picture changes without the window changing.jqu
-widthOfImg.onresize = function(){
+widthOfImg.onchange = function(){
     var widthOfImg = $(".project img").width();
     $("p.photo-text").css({ "max-width": widthOfImg });
 }
