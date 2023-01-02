@@ -12,6 +12,7 @@ $(function() {windowSize(); sortDivs()});
 // buttons
 $("div.burger-icon").click(burgerMenu);
 $('#sortBtn').on('click', sortDivs);
+$('img').on('click', imgSize(this));
 
 function windowSize() {
     // check device
@@ -82,5 +83,9 @@ function sortDivs() {
 
     $('#all-projects div.project:last-child').addClass('bottom');
 }
+
+function imgSize(clickedImg){
+    $(clickedImg).toggleClass("bigger-picture");
+} 
 
 window.onresize = windowSize;

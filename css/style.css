@@ -22,6 +22,11 @@ body.open {
 
 img {
     object-fit: cover;
+    cursor: pointer;
+}
+
+img.bigger-picture {
+    scale: 1.3;
 }
 
 nav li a {
@@ -204,8 +209,8 @@ nav.standard ul {
 nav ul li {
     display: inline-block;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 28px;
+    line-height: 36px;
 }
 
 .standard li.middle-nav {
@@ -218,25 +223,28 @@ nav ul li {
 
 h1 {
     font: normal normal 900 170px/215px 'Kufam';
-    text-shadow: 0px 15px 6px #2EE6C6;
+    text-shadow: 2px 5px 3px #2EE6C6;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     line-height: 1.2;
 }
 
 h2 {
-    font: normal normal 900 45px/60px 'Kufam';
+    font: normal normal 900 40px/60px 'Kufam';
+    text-shadow: 1px 1px 3px #2c2c2c;
 }
 
 h3 {
-    font: normal normal 600 28px/38px 'Kufam';
+    font: normal normal 600 24px/36px 'Kufam';
+    text-shadow: 1px 1px 3px #2c2c2c;
 }
 
 p {
-    font: normal normal normal 20px/30px 'Kufam';
+    font: normal normal normal 16px/24px 'Kufam';
     color: #E6E6E6;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #1f1f1f;
 }
 
 button {
@@ -245,7 +253,7 @@ button {
     width: 125px;
     height: auto;
     margin: 20px auto 0;
-    font: normal normal normal 20px/30px 'Kufam';
+    font: normal normal normal 16px/24px 'Kufam';
     color: #2ee6c6;
     background-color: #585858;
 
@@ -256,8 +264,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    padding: 25px 0;
+    height: 40px;
+    padding: 20px 0;
     background-color: #E6E6E6;
 
 }
@@ -267,7 +275,7 @@ footer a {
 }
 
 footer img.icon {
-    height: 45px;
+    height: 35px;
 }
 
 footer div.container {
@@ -292,19 +300,19 @@ section.about {
 
 div.overview, div.general-info {
     float: left;
-    max-width: 610px;
+    max-width: 540px;
 }
 
 img.portrait{
     aspect-ratio: 502/687;
-    max-width: 502px;
+    max-width: 402px;
     height: auto;
     width: 100%;
     height: 100%;
     margin: 0 0 30px;
     box-shadow: 10px 10px 15px #2EE6C6CC;
     border-radius: 30px;
-    object-position: 62% 0%;
+    object-position: 67% 0%;
     display: block;
 }
 
@@ -372,16 +380,28 @@ div.apps, div.know-how{
     width: 100px;
 }
 
+.skills img:hover {
+    scale: 1.2;
+    animation-name: img-hover;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes img-hover {
+    0% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 1; }
+}
 
 /* projects */
-.intro {
+#intro-projects {
     margin-bottom: 60px;
 }
 
-.intro p {
+#intro-projects p {
     margin: 0 auto;
     text-align: center;
-    max-width: 750px;
+    max-width: 650px;
 }
 
 #all-projects {
@@ -397,7 +417,7 @@ div.apps, div.know-how{
 }
 
 .project div.container li {
-    font: normal normal normal 20px/30px 'Kufam';
+    font: normal normal normal 16px/24px 'Kufam';
     color: #E6E6E6;
 }
 
@@ -458,6 +478,10 @@ main p#more {
     font-size: 16px;
     text-align: right;
     margin-bottom: 20px;
+}
+
+#steam-project div.container.right p:last-child {
+    margin-bottom: 40px;
 }
 
 
@@ -696,7 +720,7 @@ div.links {
     }
 
     /* projects */
-    .intro p {
+    #intro-projects p {
         max-width: 550px;
     }
 
@@ -714,10 +738,6 @@ div.links {
 
     .project img {
         max-width: 300px;
-    }
-
-    .project div.container li {
-        font: normal normal normal 14px/21px Kufam;
     }
 
     .project .container {
@@ -814,7 +834,7 @@ div.links {
     }
 
     /* projects */
-    .intro p {
+    #intro-projects p {
         max-width: 75vw;
     }
 
