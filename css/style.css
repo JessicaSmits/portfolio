@@ -167,6 +167,7 @@ div.bar-group {
 
 ul.icons img {
     width: 40px;
+    transition: padding .5s;
 }
 
 ul.icons {
@@ -188,11 +189,15 @@ ul.icons li:last-of-type {
     margin-right: 0;
 }
 
+ul.icons img:hover {
+    padding-bottom: 20px;
+}
+
 
 /* global main */
 nav.standard {
     background: #585858;
-    padding-top: 30px;
+    padding: 15px 0;
     text-align: center;
     position: -webkit-fixed;
     position: fixed;
@@ -209,25 +214,30 @@ nav.standard ul {
 nav ul li {
     display: inline-block;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
 }
 
 .standard li.middle-nav {
-    margin: 0 345px;
+    margin: 0 100px;
 }
 
 .highlight{
-    color: #2EE6C6;
+    color: #a1e6da;
 }
 
 h1 {
-    font: normal normal 900 170px/215px 'Kufam';
+    font: normal normal 900 150px/215px 'Kufam';
     text-shadow: 2px 5px 3px #2EE6C6;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 80px;
     line-height: 1.2;
+    transition: text-shadow 1s, font-size 1;
+}
+
+h1:hover {
+    text-shadow: 2px 5px 80px #2EE6C6;
 }
 
 h2 {
@@ -435,7 +445,7 @@ div.apps, div.know-how{
     height: auto;
     width: 600px;
     height: auto;
-    object-position: 50% 50%;
+    object-position: 23% 50%;
     border-radius: 30px;
 }
 
@@ -510,12 +520,16 @@ main p#more {
 
 .contact a {
     text-decoration: none;
+    transition: all .5s;
+}
+
+.contact a img:hover {
+    padding-bottom: 20px;
 }
 
 div.links {
     margin-bottom: 35px;
 }
-
 
 .contact .container .links {
     width: max-content;
@@ -529,10 +543,6 @@ div.links {
         margin-bottom: 40px;
     }
     
-    .standard li.middle-nav{
-        margin: 0 200px;
-    }
-
     svg {
         width: 825px;
     }
@@ -609,16 +619,12 @@ div.links {
     }
 
     nav ul li {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 26px;
     }
 
     nav.standard {
         padding-top: 15px;
-    }
-
-    .standard li.middle-nav{
-        margin: 0 100px;
     }
 
     svg {
@@ -628,8 +634,13 @@ div.links {
     h1 {
         font-size: 75px;
         line-height: 98px;
-        text-shadow: 0px 6px 2px #2EE6C6;
+        text-shadow: 0px 3px 2px #2EE6C6;
         margin: 50px 0;
+        transition: text-shadow 1s,;
+    }
+
+    h1:hover {
+        text-shadow: 0px 3px 20px #2EE6C6;
     }
 
     section.about {
@@ -914,7 +925,7 @@ div.links {
     div.burger-icon {
         width: 50px;
         border-radius: 0 0 0 30px;
-        box-shadow: 0px 0px 30px #00000099;
+        box-shadow: -2px 5px 6px #0000004d;
     }
 
     div.bar-group {
