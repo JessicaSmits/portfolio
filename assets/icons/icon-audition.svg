@@ -11,11 +11,10 @@
   </defs>
   <g id="icon-audition" transform="translate(-364 -2759)">
     <g data-type="innerShadowGroup">
-      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="63" cy="63" r="63" transform="translate(364 2759)" fill="#585858"/>
       <g transform="matrix(1, 0, 0, 1, 364, 2759)" filter="url(#Ellipse_10)">
-        <circle id="Ellipse_10-3" data-name="Ellipse 10" cx="63" cy="63" r="63" fill="#fff"/>
+        <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="63" cy="63" r="63" fill="#fff"/>
       </g>
-      <g id="Ellipse_10-4" data-name="Ellipse 10" transform="translate(364 2759)" fill="none" stroke="#2ee6c6" stroke-width="5">
+      <g id="Ellipse_10-3" data-name="Ellipse 10" transform="translate(364 2759)" fill="none" stroke="#2ee6c6" stroke-width="5">
         <circle cx="63" cy="63" r="63" stroke="none"/>
         <circle cx="63" cy="63" r="60.5" fill="none"/>
       </g>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_23">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-edit" transform="translate(-897 -58)">
+    <path id="icon-edit-2" data-name="icon-edit" d="M4.5,37.747V46.5h8.749l25.8-25.8L30.3,11.944Zm41.318-23.82a2.323,2.323,0,0,0,0-3.29L40.358,5.179a2.323,2.323,0,0,0-3.29,0L32.8,9.448,41.548,18.2l4.269-4.269Z" transform="translate(934.5 95.504)" fill="#fff"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 897, 58)" filter="url(#Ellipse_23)">
+        <circle id="Ellipse_23-2" data-name="Ellipse 23" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_23-3" data-name="Ellipse 23" transform="translate(897 58)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

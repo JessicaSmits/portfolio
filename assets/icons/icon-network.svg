@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_17">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-network" transform="translate(-897 -210)">
+    <path id="icon-organization" d="M40.5,19.928h-30a6,6,0,0,0-6,6v3a5.97,5.97,0,0,0,3,5.168v9.832h12v6h12v-6h12V34.1a5.97,5.97,0,0,0,3-5.168v-3A6,6,0,0,0,40.5,19.928Zm-24,21h-6v-12h-3v-3a3,3,0,0,1,3-3h3.831a5.933,5.933,0,0,0-.831,3v6a5.97,5.97,0,0,0,3,5.168v3.832Zm15-6v-6h-3v18h-6v-18h-3v6a3,3,0,0,1-3-3v-6a3,3,0,0,1,3-3h12a3,3,0,0,1,3,3v6a3,3,0,0,1-3,3Zm12-6h-3v12h-6V37.1a5.97,5.97,0,0,0,3-5.168v-6a5.934,5.934,0,0,0-.832-3H40.5a3,3,0,0,1,3,3v3ZM18.734,16.8a8.888,8.888,0,0,0,13.529,0A5.992,5.992,0,1,0,34.247,8.9a8.975,8.975,0,0,0-17.5,0A6,6,0,1,0,18.734,16.8ZM37.5,10.928a3,3,0,1,1-3,3A3,3,0,0,1,37.5,10.928Zm-12-6a6,6,0,1,1-6,6,6,6,0,0,1,6-6Zm-12,12a3,3,0,1,1,3-3A3,3,0,0,1,13.5,16.928Z" transform="translate(934.501 247.072)" fill="#fff"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 897, 210)" filter="url(#Ellipse_17)">
+        <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_17-3" data-name="Ellipse 17" transform="translate(897 210)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

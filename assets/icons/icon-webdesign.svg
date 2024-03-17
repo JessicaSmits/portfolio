@@ -11,11 +11,10 @@
   </defs>
   <g id="icon-webdesign" transform="translate(-772 -3225)">
     <g data-type="innerShadowGroup">
-      <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="63" cy="63" r="63" transform="translate(772 3225)" fill="#585858"/>
       <g transform="matrix(1, 0, 0, 1, 772, 3225)" filter="url(#Ellipse_17)">
-        <circle id="Ellipse_17-3" data-name="Ellipse 17" cx="63" cy="63" r="63" fill="#fff"/>
+        <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="63" cy="63" r="63" fill="#fff"/>
       </g>
-      <g id="Ellipse_17-4" data-name="Ellipse 17" transform="translate(772 3225)" fill="none" stroke="#2ee6c6" stroke-width="5">
+      <g id="Ellipse_17-3" data-name="Ellipse 17" transform="translate(772 3225)" fill="none" stroke="#2ee6c6" stroke-width="5">
         <circle cx="63" cy="63" r="63" stroke="none"/>
         <circle cx="63" cy="63" r="60.5" fill="none"/>
       </g>

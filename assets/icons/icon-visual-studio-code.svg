@@ -11,11 +11,10 @@
   </defs>
   <g id="icon-visual-studio-code" transform="translate(-772 -2593)">
     <g data-type="innerShadowGroup">
-      <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="63" cy="63" r="63" transform="translate(772 2593)" fill="#585858"/>
       <g transform="matrix(1, 0, 0, 1, 772, 2593)" filter="url(#Ellipse_8)">
-        <circle id="Ellipse_8-3" data-name="Ellipse 8" cx="63" cy="63" r="63" fill="#fff"/>
+        <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="63" cy="63" r="63" fill="#fff"/>
       </g>
-      <g id="Ellipse_8-4" data-name="Ellipse 8" transform="translate(772 2593)" fill="none" stroke="#2ee6c6" stroke-width="5">
+      <g id="Ellipse_8-3" data-name="Ellipse 8" transform="translate(772 2593)" fill="none" stroke="#2ee6c6" stroke-width="5">
         <circle cx="63" cy="63" r="63" stroke="none"/>
         <circle cx="63" cy="63" r="60.5" fill="none"/>
       </g>

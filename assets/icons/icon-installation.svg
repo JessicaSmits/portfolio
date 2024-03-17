@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_20">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-installation" transform="translate(-1264 -210)">
+    <path id="icon-museum" d="M9.724,18.842h4.263l.655,19.6H9.156ZM6.164,39.528H47.535v2.177H50.8v3.266h2.177v2.177H.72V44.971H2.9V41.705H6.164ZM49.712,13.194,26.851,3.6,3.986,13.194v1.293H49.712V13.194ZM8.341,15.576H45.358v2.177H8.341Zm31.285,3.266h4.261l.661,19.6H39.055Zm-9.964,0h4.261l.653,19.6H29.089Zm-9.966,0h4.262l.649,19.6H19.122l.575-19.6Z" transform="translate(1300.151 247.626)" fill="#fff"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 1264, 210)" filter="url(#Ellipse_20)">
+        <circle id="Ellipse_20-2" data-name="Ellipse 20" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_20-3" data-name="Ellipse 20" transform="translate(1264 210)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
