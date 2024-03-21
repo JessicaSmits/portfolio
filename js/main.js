@@ -9,7 +9,7 @@ var marginTop;
 var uniqueTags;
 
 
-$(function () { windowSize(); headerResizeOnScroll(); findTags(); filterButtons(); sortProjects()});
+$(function () { windowSize(); headerResizeOnScroll(); findTags(); filterButtons(); sortProjects(); clickedImg()});
 
 window.onresize = windowSize;
 window.onscroll = headerResizeOnScroll;
@@ -169,10 +169,11 @@ function filterButtons(tags) {
             });
         }
 
-        if (filter == 'all' ) {
-            $('.filter-button').removeClass('active');
-            $('.project').show();
-        }
+        // if (filter === 'all' ) {
+        //     $('.filter-button').removeClass('active');
+        //     $('.project').show();
+        // }
+        
     });
 
     $('#all-projects div.project:last-child').addClass('bottom');
@@ -183,11 +184,6 @@ function filterButtons(tags) {
 // Call the findTags function to initiate the process
 findTags();
 
-
-
-function imgSize(clickedImg) {
-    $(clickedImg).toggleClass("bigger-picture");
-}
 
 // https://codepen.io/wuh/pen/RxvLoO
 $(function boxShadowCursor() {
