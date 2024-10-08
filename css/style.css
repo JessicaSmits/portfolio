@@ -1,23 +1,24 @@
 /* global settings*/
 html {
-    background: #585858;
-    font-family: 'Kufam', sans-serif;
-    color: white;
+    background: #fefae0;
+    color: #283618;
     z-index: 1;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    min-height: 100svh;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
 * {
     transition: all 100ms ease-in-out, color 1ms;
-} 
+}
 
 body.open {
     overflow: hidden;
@@ -30,19 +31,19 @@ img {
 
 nav li a {
     text-decoration: none;
-    color: white;
+    color: #283618;
 }
 
 nav li a:hover {
-    color: #2EE6C6;
+    color: #bc6c25;
 }
 
 a:hover {
-    color: white;
+    color: #606c38;
 }
 
 a {
-    color: #6de2cf;
+    color: #bc6c25;
     text-decoration: underline;
 }
 
@@ -50,13 +51,13 @@ main {
     position: relative;
     max-width: 80em;
     margin: 0 auto;
-    padding-bottom: 15em;
+    padding-bottom: 7em;
 }
 
 
-/* global header */ 
+/* global header */
 header {
-    margin-bottom: 7em;
+    margin-bottom: 5em;
 }
 
 header img.hero {
@@ -65,17 +66,17 @@ header img.hero {
     height: 100%;
     object-position: 0 0;
     margin-bottom: 3.5em;
-    position: relative;
+    position: absolute;
     z-index: -1;
 }
 
 div.overlay-hero {
     width: 100%;
-    height: 63em;
+    height: 90vh;
     position: absolute;
     top: 0;
     display: inline-block;
-    background: linear-gradient(to bottom, rgba(88,88,88,0) 0%, rgba(88,88,88,0.2) 17%, rgba(88,88,88,1) 72%, rgba(88,88,88,1) 100%);
+    background: linear-gradient(to bottom, rgba(254, 250, 224, 0.3) 0%, rgba(254, 250, 224, 1) 100%);
 }
 
 nav.burger-menu {
@@ -90,22 +91,20 @@ div.burger-icon {
     display: none;
     aspect-ratio: 1/1;
     width: 4em;
-    background-color: #585858;
+    background-color: #fefae0;
     border-radius: 0 0 0 2.5em;
-    box-shadow: 1px 6px 5px 1px hsl(170deg 23% 8% / 85%);
+    box-shadow: 2px 4px 5px 1px #283618;
     cursor: pointer;
     z-index: 3;
-    transition: 300ms ease-in-out;
 }
 
 div.burger-icon.open {
-    background: #2ee6c6;
-    transition: 300ms ease-in-out;
+    background: #283618;
+    box-shadow: none;
 }
 
 div.bar.open {
-    background: #585858;
-    transition: 300ms ease-in-out;
+    background: #606c38;
 }
 
 div.bar-group {
@@ -115,12 +114,10 @@ div.bar-group {
 
 #bar1.open {
     transform: rotate(45deg) translate(7px, 5px);
-    transition: 300ms ease-in-out;
 }
 
 #bar3.open {
     transform: rotate(-45deg) translate(7px, -5px);
-    transition: 300ms ease-in-out;
 }
 
 #bar2 {
@@ -135,14 +132,14 @@ div.bar-group {
 .bar {
     width: 2.5em;
     height: 3.5px;
-    background-color: #2EE6C6;
+    background-color: #606c38;
     transition: 300ms ease-in-out;
 }
 
 .overlay {
     display: none;
-    background-color: #e6e6e6;
-    color: #585858;
+    background-color: #fefae0;
+    color: #fefae0;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -151,6 +148,7 @@ div.bar-group {
     z-index: 2;
     text-align: center;
     transition: unset;
+    box-shadow: -20px 0px 90px 0px #dda15e;
 }
 
 .overlay ul {
@@ -160,10 +158,6 @@ div.bar-group {
 .overlay li {
     display: list-item;
     list-style: none;
-}
-
-nav li a {
-    color: white;
 }
 
 .overlay li.middle-nav {
@@ -201,7 +195,7 @@ ul.icons img:hover {
 
 /* global main */
 nav.standard {
-    background: #585858;
+    background: #fefae0;
     padding: 1em 0;
     text-align: center;
     position: -webkit-fixed;
@@ -209,7 +203,7 @@ nav.standard {
     top: 0;
     z-index: 2;
     width: 100%;
-    box-shadow: 0px 0px 1.5em #000000b4;
+    box-shadow: 0px 0px 1.25em #283618;
 }
 
 nav.standard ul {
@@ -219,7 +213,7 @@ nav.standard ul {
 
 nav ul li {
     display: inline-block;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5em;
     line-height: 1.5;
 }
@@ -228,13 +222,14 @@ nav ul li {
     margin: 0 7em;
 }
 
-.highlight{
-    color: #a1e6da;
+.highlight a {
+    color: #bc6c25;
 }
 
 h1 {
-    font: normal normal 900 8em/1.5em 'Kufam';
-    text-shadow: 2px 5px 3px #2EE6C6;
+    font: normal normal 400 8em/1.5em fredericka-the-greatest, serif;
+    text-shadow: 4px 3px 1px #283618;
+    color: #606c38;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -243,31 +238,34 @@ h1 {
 }
 
 h2 {
-    font: normal normal 900 1.875em/1.5em 'Kufam';
-    text-shadow: 1px 1px 3px #2c2c2c;
+    font: normal normal 400 2em/1.5em gloria-hallelujah, sans-serif;
+    margin-bottom: 0.5em;
+    color: #283618;
+    text-shadow: 0px 2px 1px #fefae0;
 }
 
 h3 {
-    font: normal normal 600 1.125em/1.5em 'Kufam';
-    text-shadow: 1px 1px 3px #2c2c2c;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 h5 {
-    font: normal normal 900 1.875em/1.5em 'Kufam';
-    text-shadow: 1px 1px 3px #2c2c2c;
-    text-align: center;
+    font-weight: 700; 
+    font-size: 1.25em;
+    text-shadow: 1px 1px 0px #606c38;
 }
 
 h4 {
-    font: normal normal 500 1em/1.5em 'Kufam';
-    text-shadow: 1px 1px 3px #2c2c2c;
+    font-weight: 700;
 }
 
 p {
-    font: normal normal normal 1em/1.5em 'Kufam';
-    color: #E6E6E6;
+    color: #283618;
     margin-bottom: 1.5em;
-    text-shadow: 1px 1px 2px #1f1f1f;
+}
+
+p strong {
+    font-weight: 700;
 }
 
 button {
@@ -275,27 +273,25 @@ button {
     border-radius: 1em;
     width: 9em;
     height: auto;
+    font-family: yorkten-slab-normal, sans-serif;
+    font-weight: 500;
     margin: 1.5em auto 0;
-    font: normal normal normal 1em/1.5em 'Kufam';
-    background-color: #585858;
-    color: #2EE6C6;
+    background-color: #dda15e;
+    color: #283618;
     border: none;
-    box-shadow: 4px 5px 6px #000000b4;
+    box-shadow: 2px 3px 1px #bc6c25;
 }
 
 /* global footer */
 footer {
-    position: relative;
-    bottom: 0;
     width: 100%;
-    max-height: max-content;
-    padding: 1.5em 0;
-    background-color: #E6E6E6;
+    position: relative;
+    z-index: 1;
+    background-color: #fefae0;
     box-shadow: 0px 0px 20px #000000b4;
 }
 
 footer a {
-    margin-right: 170px;
     height: 2.5em;
     display: inline-block;
 }
@@ -310,8 +306,12 @@ footer a:hover {
 }
 
 footer div.container {
-    width: max-content;
+    width: 20em;
+    height: 5em;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a:last-of-type {
@@ -331,13 +331,13 @@ section.about {
     justify-content: center;
 }
 
-img.portrait{
+img.portrait {
     aspect-ratio: 502/687;
     max-width: 24em;
     width: 100%;
     height: 100%;
     margin: 0 3em 3em 0;
-    box-shadow: 10px 10px 15px #2EE6C6CC;
+    box-shadow: 4px 4px 2px 1px #606c38;
     border-radius: 2em;
     object-position: 67% 0%;
     display: block;
@@ -352,27 +352,26 @@ img.portrait{
 }
 
 .data-overview {
-    max-width: 80em;
-    overflow: auto;
+    max-width: 80%;
     margin: 0 auto 6em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 1em;
+    min-width: 50vw;
 }
 
-.data-overview div:last-child {
-    margin-right: 0;
-}
-
-.data-overview div{
-    margin-right: 4em;
+.data-overview div {
+    margin-top: 1em;
 }
 
 .data-overview p {
     margin-bottom: 0;
 }
 
-.project.bottom, .bottom {
+.project.bottom,
+.bottom {
     margin-bottom: 3.5em;
 }
 
@@ -384,51 +383,88 @@ img.portrait{
 .skills {
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.skills .icon{
+.skills .icon {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.icon .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1em 1em 2.7em
-}
-
-.skills .icon .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 1em;
-} 
+}
 
 .skills p {
     margin-left: 1.5em;
-    width: 13em;
 }
 
-.skills img{
-    width: 5em;
+.progress-bar-bg {
+    width: 10em;
+    padding: 2px;
+    background-color: #283618;
+    border-radius: 5px;
 }
 
-.skills img:hover {
-    animation-name: img-hover;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    position: relative;
+.progress-bar {
+    width: 0%;
+    height: 0.65em;
+    background-color: #bc6c25;
+    border-radius: 5px;
+    transition: all 300ms 50ms;
 }
 
-@keyframes img-hover {
-    0% {opacity: 1; right: 0px;}
-    40% {opacity: 0;}
-    50% {opacity: 0; right: 20px;}
-    60% {opacity: 0;}
-    100% {opacity: 1; right: 0px}
+.progress-bar.storytelling {
+    width: 90%;
 }
+
+.progress-bar.video-editing {
+    width: 75%;
+}
+.progress-bar.programming {
+    width: 41%;
+}
+.progress-bar.prototyping {
+    width: 94%;
+}
+.progress-bar.visual {
+    width: 50%;
+}
+.progress-bar.photography {
+    width: 58%;
+}
+.progress-bar.premiere {
+    width: 91%;
+}
+.progress-bar.adobe-xd {
+    width: 92%;
+}
+.progress-bar.figma {
+    width: 54%;
+}
+.progress-bar.photoshop {
+    width: 43%;
+}
+.progress-bar.illustrator {
+    width: 44%;
+}
+.progress-bar.unreal {
+    width: 62%;
+}
+
 
 /* projects */
 #intro-projects {
-    margin-bottom: 4em;
+    margin: 0 auto 4em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #intro-projects p {
@@ -438,8 +474,9 @@ img.portrait{
 }
 
 #button-container {
-    max-width: 60em;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #button-container button {
@@ -451,20 +488,27 @@ img.portrait{
 }
 
 #button-container button:hover {
-    scale: 0.925;
+    scale: 0.95;
+    box-shadow: 1px 1px 0px #bc6c25;
 }
 
 button.active {
-    color: #2c2c2c;
-    background-color: #2EE6C6;
+    background-color: #bc6c25;
+    box-shadow: none;
 }
 
-.project p, .project h5 {
+#button-container button.active:hover {
+    scale: 1;
+    background-color: #dda15e;
+}
+
+.project p,
+.project h5 {
     max-width: 39em;
 }
 
 .project {
-    margin: 0 auto 8em;
+    margin: 0 auto 6em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -478,17 +522,8 @@ button.active {
     flex-direction: row-reverse;
 }
 
-.project div.container li {
-    font: normal normal normal 1em/1.5em 'Kufam';
-    color: #E6E6E6;
-}
-
-.project div.container li::before {
+.project .container li::before, .icon li::before {
     content: "- ";
-}
-
-.project .container h3 {
-    margin-top: 2.5em;
 }
 
 .project img {
@@ -510,17 +545,20 @@ button.active {
 
 div.tag {
     display: inline-block;
-    background-color: #2ee6c6;
-    color: #585858;
-    padding: 0.25em 0.6em;
+    background-color: #606c38;
+    opacity: inherit;
+    color: #fefae0;
+    padding: 0.3em 0.7em;
     border-radius: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     margin-right: 0.5em;
     text-transform: lowercase;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    min-width: fit-content;
+    box-shadow: 1px 1px 1px 1px #283618;
 }
 
-div.list{
+div.list {
     display: flex;
     justify-content: space-between;
 }
@@ -535,7 +573,6 @@ main p#more {
 
 .project p.photo-text {
     font-style: italic;
-    font-size: 1em;
     text-align: right;
     margin-bottom: 1em;
 }
@@ -548,7 +585,7 @@ main p#more {
 /* contact */
 .contact {
     margin: 0 auto;
-    width: max-content;
+    max-width: 500px;
 }
 
 .contact h5 {
@@ -564,11 +601,13 @@ main p#more {
 
 .contact a {
     text-decoration: none;
-    transition: all .5s;
+    transition: all 300ms;
+    color: #606c38;
+    text-decoration: underline;
 }
 
 .contact a img:hover {
-    padding-bottom: 1.5em;
+    margin-right: 1.5em;
 }
 
 .contact .container {
@@ -576,62 +615,75 @@ main p#more {
     flex-direction: column;
 }
 
-.contact .container .links {
+.links {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.links a:hover {
+    color: #bc6c25;
 }
 
 /* media queries */
 @media all and (max-width: 1700px) {
     /* global */
-    
+
     header img.hero {
         object-position: 0 10%;
     }
-    
+
     /* about */
     main {
         max-width: 70em;
     }
 
-    .project img, .project .container {
+    .project img,
+    .project .container {
         max-width: 32em;
     }
 
 }
 
-@media all and (max-width:1300px) {
+@media all and (max-width:1200px) {
+
     /* global */
-    body{
-        font-size: 14px;
+    body {
+        font-size: 13px;
     }
 
     main {
-        max-width: 55em;
+        max-width: 60em;
     }
 
     .project {
-        margin-bottom: 8em;
         justify-content: space-evenly;
     }
 
-    .project img, .project .container {
+    .project img,
+    .project .container {
         max-width: 23em;
     }
 
 }
 
-@media all and (max-width:719px) { 
+@media all and (max-width:819px) {
     /* global */
 
     * {
         font-size: 12px;
     }
 
-    h1, h2, h3, p {
+    h1,
+    h2,
+    h3,
+    p {
         text-align: center;
+    }
+
+    h1 {
+        font-size: 6em;
     }
 
     h5 {
@@ -643,16 +695,18 @@ main p#more {
         line-height: 1.5em;
     }
 
-    nav li a {
-        color: #585858;
+    .general-info {
+        max-width: 25em;
     }
 
     section.about {
         flex-wrap: wrap;
     }
 
-    .skills .icon {
-        justify-content: center;
+    .skills {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
     }
 
     .skills p {
@@ -669,11 +723,14 @@ main p#more {
         max-width: 35em;
     }
 
-    .project.left, .project.right{
-       flex-direction: column;
+    .project.left,
+    .project.right {
+        flex-direction: column;
     }
 
-    .project h2, .project h3, .project p {
+    .project h2,
+    .project h3,
+    .project p {
         text-align: left;
     }
 
@@ -690,11 +747,11 @@ main p#more {
     .links img {
         margin-right: 1.5em;
     }
-    
+
 }
 
 @media all and (max-width: 375px) {
-/* font em = 14px */
+    /* font em = 14px */
 
     nav ul li {
         font-size: 1.25rem;
@@ -711,7 +768,7 @@ main p#more {
     ul.icons li {
         margin-right: 2em;
     }
-    
+
     div.burger-icon {
         width: 50px;
         border-radius: 0 0 0 30px;

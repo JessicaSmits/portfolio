@@ -8,6 +8,7 @@ var pHeight;
 var marginTop;
 var uniqueTags;
 
+const projects = $('.project');
 
 $(function () { windowSize(); headerResizeOnScroll(); findTags(); filterButtons(); sortProjects(); clickedImg()});
 
@@ -24,7 +25,6 @@ function headerResizeOnScroll() {
 
 // buttons
 $("div.burger-icon").click(burgerMenu);
-$('img').on('click', imgSize(this));
 
 function windowSize() {
     // check device
@@ -68,22 +68,22 @@ function windowSize() {
 
         $(this).find('p').css({ 'marginTop': marginTop });
     });
-
 }
 
 function burgerMenu() {
     $("div.overlay").animate({
         "width": "toggle"
-    }, 300);
+    }, 400);
     $("div.burger-icon, div.bar, #bar2, #bar1, #bar3, body").toggleClass("open");
-
 }
 
 // automate alternate project rows
 function sortProjects() {
-    const projects = document.querySelectorAll('.project');
+    $('.project').removeClass('left right');
 
-    projects.forEach((project, index) => {
+    let visibleProjects = Array.from(projects).filter(project => project.style.display !== 'none');
+
+    visibleProjects.forEach((project, index) => {
         // Check if index is even or odd to determine flex-direction
         if (index % 2 === 0) {
         project.classList.add('left');
@@ -92,7 +92,6 @@ function sortProjects() {
         }
     });
 }
-
 
 // filter projects on tags
 function findTags() {
@@ -135,13 +134,11 @@ function filterButtons(tags) {
         buttonContainer.append(button);
     });
 
-    var allButton = $('<button/>', { text: 'show all', class: 'filter-button', 'data-filter': 'all' });
-    buttonContainer.append(allButton);
-
     var activeFilters = [];
 
     // Adding click event to filter buttons
     $('.filter-button').on('click', function () {
+        $('.project').removeClass('left right');
         var filter = $(this).data('filter');
 
         if ($(this).hasClass('active')) {
@@ -168,60 +165,12 @@ function filterButtons(tags) {
                 }
             });
         }
-
-        // if (filter === 'all' ) {
-        //     $('.filter-button').removeClass('active');
-        //     $('.project').show();
-        // }
-        
+        sortProjects();
     });
 
     $('#all-projects div.project:last-child').addClass('bottom');
-    sortProjects();
     
 }
 
 // Call the findTags function to initiate the process
 findTags();
-
-
-// https://codepen.io/wuh/pen/RxvLoO
-$(function boxShadowCursor() {
-    $('h1').each(function () {
-        var el = $(this);
-        var elWidth = $(el).width();
-        var elHeight = $(el).height();
-        var elOffset = $(el).offset();
-        var viewportWidth = $(document).width();
-        var viewportHeight = $(document).height();
-        var elCentreX = elOffset.left + (elWidth / 2);
-        var elCentreY = elOffset.top + (elHeight / 2);
-        var elShadow = $(this).css('text-shadow');
-        var elShadowSplit = elShadow.split(' ');
-        var elShadowColor = [elShadowSplit[0], elShadowSplit[1], elShadowSplit[2]].join('');
-        var elShDpthX = parseInt(elShadowSplit[3].replace(/\D/g, ''));
-        var elShDpthY = parseInt(elShadowSplit[4].replace(/\D/g, ''));
-
-        $(window).on('mousemove', function (e) {
-            var offX = e.pageX - elCentreX;
-            var offY = e.pageY - elCentreY;
-
-            var newShDepthX = -Math.round(offX.map(0, viewportWidth / 2, 0, elShDpthX) * 7) + 2 + 'px';
-            var newShDepthY = -Math.round(offY.map(0, viewportHeight / 2, 0, elShDpthY) * 7) + 2 + 'px';
-            var newShadow = [newShDepthX, newShDepthY, elShadowSplit[5], elShadowColor];
-            $(el).css('text-shadow', newShadow.join(' '));
-
-            console.log(newShDepthX, newShDepthY)
-        });
-
-    });
-
-});
-
-Number.prototype.map = function (in_min, in_max, out_min, out_max) {
-    return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-}
-
-
-
-
