@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_18">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-graphic-design" transform="translate(-1180 -3225)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 1180, 3225)" filter="url(#Ellipse_18)">
+        <circle id="Ellipse_18-2" data-name="Ellipse 18" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_18-3" data-name="Ellipse 18" transform="translate(1180 3225)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+    <path id="Icon_awesome-paint-brush" data-name="Icon awesome-paint-brush" d="M11.744,21.75A7.116,7.116,0,0,0,4.91,26.834a1.073,1.073,0,0,1-1.026.7C3.1,27.536.688,25.59,0,25.121,0,30.911,2.667,36,9,36c5.334,0,9-3.078,9-8.451a6.092,6.092,0,0,0-.068-.642L11.744,21.75ZM32.2,0a4.294,4.294,0,0,0-2.827,1.157C15,14,13.5,14.3,13.5,18.077a6.509,6.509,0,0,0,.614,2.721L18.6,24.537a6.47,6.47,0,0,0,1.574.213c4.367,0,6.9-3.2,14.847-18.032A7.235,7.235,0,0,0,36,3.484,3.661,3.661,0,0,0,32.2,0Z" transform="translate(1225.001 3270)" fill="#e6e6e6"/>
+  </g>
+</svg>

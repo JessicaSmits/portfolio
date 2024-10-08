@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_24">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-story" transform="translate(-552 -58)">
+    <g id="icon-book-open" transform="translate(588.667 95.5)">
+      <path id="Path_1" data-name="Path 1" d="M3,4.5H17a9.333,9.333,0,0,1,9.333,9.333V46.5a7,7,0,0,0-7-7H3Z" transform="translate(0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <path id="Path_2" data-name="Path 2" d="M41.333,4.5h-14A9.333,9.333,0,0,0,18,13.833V46.5a7,7,0,0,1,7-7H41.333Z" transform="translate(8.333)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 552, 58)" filter="url(#Ellipse_24)">
+        <circle id="Ellipse_24-2" data-name="Ellipse 24" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_24-3" data-name="Ellipse 24" transform="translate(552 58)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

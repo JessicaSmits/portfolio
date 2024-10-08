@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_16">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-webdev" style="isolation: isolate">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_16)">
+        <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_16-3" data-name="Ellipse 16" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_18" data-name="Group 18" transform="translate(-364 -3225)" style="isolation: isolate">
+      <g id="Icon_feather-code" data-name="Icon feather-code" transform="translate(412 3273)">
+        <path id="Path_13" data-name="Path 13" d="M24,24l5.479-7.5L24,9" transform="translate(-1.479)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Path_14" data-name="Path 14" d="M8.479,9,3,16.5,8.479,24" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <path id="Icon_material-web-asset" data-name="Icon material-web-asset" d="M41.833,6H9.167A4.665,4.665,0,0,0,4.5,10.667v28a4.665,4.665,0,0,0,4.667,4.667H41.833A4.68,4.68,0,0,0,46.5,38.667v-28A4.665,4.665,0,0,0,41.833,6Zm0,32.667H9.167V15.333H41.833Z" transform="translate(401.5 3263)" fill="#e6e6e6"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="126" viewBox="0 0 126 126">
+  <defs>
+    <filter id="Ellipse_22">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feFlood flood-color="#309886" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-ue" transform="translate(-1086 -58)">
+    <path id="icon-unrealengine" d="M30.057,0A30.162,30.162,0,1,0,59.964,30.161,30.035,30.035,0,0,0,30.057,0Zm0,1.327A28.287,28.287,0,0,1,50.272,9.772a29.006,29.006,0,0,1,0,40.777,28.418,28.418,0,0,1-40.431,0,29,29,0,0,1,0-40.777A28.281,28.281,0,0,1,30.06,1.327Zm-1.5,10.614c-4.871,1.307-9.38,3.81-15.39,10.7S8.3,35.225,8.3,35.225a29.525,29.525,0,0,1,5.648-8.04c1.89-1.953,3.3-2.606,4.268-2.609A1.5,1.5,0,0,1,19.8,26.089V40.081A1.492,1.492,0,0,1,18.1,41.748a4.582,4.582,0,0,1-1.35-.256c4.1,5.952,13.889,6.786,13.889,6.786l4.3-4.595.1.088,3.941,3.358c7.2-4.28,10.677-12.215,10.677-12.215-3.215,3.4-5.263,4.195-6.48,4.19a1.8,1.8,0,0,1-1.5-.641c-.058-.294-.158-4.549-.2-8.809-.035-4.414,0-8.83.219-8.842a62.294,62.294,0,0,1,5.21-7.043,21.171,21.171,0,0,0-11.451,6.316c-1.194-.94-3.629-.782-3.629-.782a5.141,5.141,0,0,1,2.28,3.966V38.148s-2.488,2.194-4.4,2.194a2.7,2.7,0,0,1-2.214-1.129,2.971,2.971,0,0,1-.377-.648V20.19a1.593,1.593,0,0,1-.912.309,1.221,1.221,0,0,1-1.116-.8,5.006,5.006,0,0,1-.354-2.116c0-3.393,3.833-5.638,3.833-5.638Z" transform="translate(1118.943 91.017)" fill="#fff"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 1086, 58)" filter="url(#Ellipse_22)">
+        <circle id="Ellipse_22-2" data-name="Ellipse 22" cx="63" cy="63" r="63" fill="#fff"/>
+      </g>
+      <g id="Ellipse_22-3" data-name="Ellipse 22" transform="translate(1086 58)" fill="none" stroke="#2ee6c6" stroke-width="5">
+        <circle cx="63" cy="63" r="63" stroke="none"/>
+        <circle cx="63" cy="63" r="60.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
