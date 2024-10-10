@@ -359,7 +359,6 @@ img.portrait {
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 1em;
-    min-width: 50vw;
 }
 
 .data-overview div {
@@ -585,7 +584,9 @@ main p#more {
 /* contact */
 .contact {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 600px;
+    width: fit-content;
+    padding: 1em;
 }
 
 .contact h5 {
@@ -627,6 +628,24 @@ main p#more {
 }
 
 /* media queries */
+@media all and (min-width: 2000px) {
+    /* global */
+    html, * {
+        font-size: 16px;
+    }
+
+    /* about */
+    main {
+        max-width: 60em;
+    }
+
+    .project img,
+    .project .container {
+        max-width: 32em;
+    }
+
+}
+
 @media all and (max-width: 1700px) {
     /* global */
 
@@ -655,6 +674,10 @@ main p#more {
 
     main {
         max-width: 60em;
+    }
+
+    h1 {
+        text-shadow: 3px 2px 1px #283618;
     }
 
     .project {
@@ -688,6 +711,7 @@ main p#more {
 
     h5 {
         font-size: 1.25em;
+        text-shadow: 0px 1px 0px #606c38;
     }
 
     nav ul li {
